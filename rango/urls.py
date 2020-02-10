@@ -8,4 +8,6 @@ urlpatterns = [
     #we leave the first argument blank as we are calling index of rango app
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
+    path('category/<slug:category_name_slug>/',
+         views.show_category, name='show_category'),
 ]
